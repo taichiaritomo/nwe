@@ -5,25 +5,21 @@
 html {
   font-family: "Helvetica", sans-serif;
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 400;
-  letter-spacing: -0.03em;
-  line-height: 1.33;
+  letter-spacing: -0.005em;
+  line-height: 1.4;
 }
 
 body {
   margin: 0 auto;
   width: 100%;
   padding: 18px;
-  max-width: 720px;
+  max-width: 960px;
 }
 
 a {
-  color: black;
-  text-decoration: none;
-  display: inline-block;
-  border-bottom: 2px solid black;
-  line-height: 0.85em;
+  color: inherit;
 }
 a:hover {
   color: red;
@@ -40,39 +36,45 @@ header h1 {
   margin: 0;
   margin-top: 0.15em;
   padding-bottom: 0.175em;
-  border-bottom: 3px solid black;
-  font-size: 144px;
+  border-bottom: 4px solid black;
+  font-size: 192px;
   font-weight: 600;
   letter-spacing: -0.07em;
   line-height: 0.82;
 }
-header h1 span:nth-child(1) {
+header h1 span#header_nike {
   margin-left: -0.05em;
 }
-header h1 span:nth-child(2) {
+header h1 span#header_wellness {
   margin-left: -0.05em;
 }
-header h1 span:nth-child(3) {
+header h1 span#header_wellness span#header_we {
+  letter-spacing: -0.04em;
+}
+header h1 span#header_edition {
   margin-left: -0.06em;
+}
+header h1 span#header_edition span#header_iti {
+  letter-spacing: -0.04em;
 }
 header p {
   flex: 1 0 50%;
   margin: 0;
-  padding: 25.2px 0;
-  border-bottom: 3px solid black;
-  font-size: 30px;
+  padding: 33.6px 0;
+  border-bottom: 4px solid black;
+  font-size: 40.5px;
   font-weight: 600;
-  letter-spacing: -0.063em;
+  letter-spacing: -0.045em;
   line-height: 0.98;
 }
 
 main h2 {
   margin: 0;
-  padding: 25.2px 0;
-  border-bottom: 3px solid black;
-  font-size: 30px;
+  padding: 33.6px 0;
+  border-bottom: 4px solid black;
+  font-size: 40.5px;
   font-weight: 600;
-  letter-spacing: -0.063em;
+  letter-spacing: -0.045em;
   line-height: 0.98;
 }
 main h2 + article {
@@ -84,15 +86,12 @@ main article {
   padding-top: 0.5px;
 }
 main article a {
-  display: block;
   color: inherit;
   line-height: inherit;
-  text-decoration: none;
   border-bottom: none;
 }
 main article a:hover {
-  color: inherit;
-  background-color: #d5d5d5;
+  color: red;
   border-bottom: none;
 }
 main article div.content {
@@ -100,51 +99,51 @@ main article div.content {
   flex-wrap: wrap;
   align-items: flex-start;
   width: 100%;
-  padding: 3em 0;
+  padding: 3.5em 0;
 }
 main article div.content div.image {
   flex: 1 0 33.334%;
 }
 main article div.content div.image img {
+  display: block;
   width: 100%;
   height: auto;
 }
 main article div.content div.text {
   flex: 1 1 66.666%;
-  padding-left: 2.5em;
+  padding-left: 3em;
 }
 main article div.content div.text h3 {
   margin: 0 0 0.5em;
-  font-size: 30px;
+  font-size: 40.5px;
   font-weight: 600;
-  letter-spacing: -0.063em;
+  letter-spacing: -0.045em;
   line-height: 0.98;
+}
+main article div.content div.text h3 a {
+  text-decoration: none;
+}
+main article div.content div.text h3 a:hover {
+  color: inherit;
 }
 main article div.content div.text p:last-child {
   margin-bottom: 0;
 }
 
-footer p {
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
-  margin: 0;
-  padding: 3em 0;
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: -0.063em;
-  line-height: 0.98;
+footer {
+  border-top: 4px solid black;
+  padding: 1em 0;
 }
-footer p span {
-  display: inline-block;
+footer span.internal-use-only {
+  font-size: 40.5px;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+  font-size: 1em;
 }
 footer img.logo {
-  width: 64px;
-  margin: 2em 0;
+  width: 48px;
   float: right;
-}
-footer .internal-use {
-  padding: 18px;
-  border-top: 3px solid black;
 }
 
 /*# sourceMappingURL=style.css.map */
