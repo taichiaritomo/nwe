@@ -1,0 +1,173 @@
+$padding_outer: 18px
+$padding_section-vertical: 2.5em
+$border: 3px solid black
+
+$font-size_m: 18px
+$font-size_l: 30px
+$font-size_xl: 144px
+
+$letter-spacing_m: -0.03em
+$letter-spacing_l: -0.063em
+$letter-spacing_xl: -0.07em
+
+$color_gray: rgb(213, 213, 213)
+
+@mixin xl_type
+  font-size: $font-size_xl
+  font-weight: 600
+  letter-spacing: $letter-spacing_xl
+  line-height: 0.82
+
+@mixin l_type
+  font-size: $font-size_l
+  font-weight: 600
+  letter-spacing: $letter-spacing_l
+  line-height: 0.98
+
+@mixin m_type
+  font-family: 'Helvetica Neue', sans-serif
+  font-size: $font-size_m
+  font-weight: 400
+  letter-spacing: $letter-spacing_m
+  line-height: 1.33
+*
+  box-sizing: border-box
+
+html
+  font-family: 'Helvetica', sans-serif
+  @include m_type
+
+body
+  margin: 0 auto
+  width: 100%
+  padding: $padding_outer
+  max-width: 720px
+
+a
+  color: black
+  text-decoration: none
+  display: inline-block
+  border-bottom: 2px solid black
+  line-height: 0.85em
+  &:hover
+    color: red
+    border-bottom: 2px solid red
+
+header
+  display: flex
+  align-items: flex-end
+  flex-wrap: wrap
+  h1
+    flex: 1 0 50%
+    margin: 0
+    margin-top: 0.15em
+    padding-bottom: 0.175em
+    border-bottom: $border
+    @include xl_type
+    span:nth-child(1)
+      margin-left: -0.05em
+    span:nth-child(2)
+      margin-left: -0.05em
+    span:nth-child(3)
+      margin-left: -0.06em
+  p
+    flex: 1 0 50%
+    margin: 0
+    padding: 0.175 * $font-size_xl 0
+    border-bottom: $border
+    @include l_type
+  
+main
+  h2
+    margin: 0
+    padding: 0.175 * $font-size_xl 0
+    border-bottom: $border
+    @include l_type
+  h2 + article
+    border-top: none
+    padding-top: none
+  article
+    border-top: 0.5px solid black
+    padding-top: 0.5px
+    a
+      display: block
+      // padding: $padding_section-vertical $padding_outer
+      color: inherit
+      line-height: inherit
+      text-decoration: none
+      border-bottom: none
+      &:hover
+        color: inherit
+        // color: red
+        background-color: $color_gray
+        border-bottom: none
+    div.content
+      display: flex
+      flex-wrap: wrap
+      align-items: flex-start
+      width: 100%
+      padding: 3em 0
+      div.image
+        flex: 1 0 33.334%
+        img
+          width: 100%
+          height: auto
+          // margin-right: 2.5em
+      div.text
+        flex: 1 1 66.666%
+        padding-left: 2.5em
+        h3
+          margin: 0 0 0.5em
+          @include l_type
+        p:last-child
+          margin-bottom: 0
+    // div.content
+    //   width: 66.666%
+    //   display: flex
+    //   // div.link-container
+    //   //   flex: 1 0 25%
+    //   //   a span
+    //   //     margin-left: -1px
+    //   //     padding-right: 1px
+    //   div.text-container
+    //     flex: 1 0 75%
+    //     padding-left: 25%
+    //     padding-right: $padding_outer
+    //     p:first-child
+    //       margin-top: 0
+    // div.clearfix
+    //   clear: both
+
+footer
+  p
+    border-top: $border
+    border-bottom: $border
+    margin: 0
+    padding: 3em 0
+    @include l_type
+    span
+      display: inline-block
+  img.logo
+    width: 64px
+    margin: 2em 0
+    float: right
+
+
+    // border-top: $border
+    // // padding: 48px $padding_outer
+    // @include l_type
+
+    // a
+    //   border-bottom: 4px solid black
+    //   line-height: 0.92em
+    //   &:hover
+    //     border-bottom: 4px solid red
+    //   span
+    //     margin-left: -2px
+    //     padding-right: 2px
+      
+
+
+  .internal-use
+    padding: $padding_outer
+    border-top: $border
