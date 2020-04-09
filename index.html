@@ -15,14 +15,14 @@
     <meta property="og:url" content="http://nike.com/">
     <meta property="og:title" content="Nike Wellness Edition">
     <meta property="og:description" content="Resources to help you stay well while staying inside.">
-    <meta property="og:image" content="images/title-image.jpeg">
+    <meta property="og:image" content="media/title-image.jpeg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="http://nike.com/">
     <meta property="twitter:title" content="Nike Wellness Edition">
     <meta property="twitter:description" content="Resources to help you stay well while staying inside.">
-    <meta property="twitter:image" content="images/title-image.jpeg">
+    <meta property="twitter:image" content="media/title-image.jpeg">
     
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="style.css">
@@ -36,7 +36,7 @@
       <h1>
         <span id="header_nike">Nike</span>
         <span id="header_wellness"><span id="header_we">We</span>llness</span>
-        <span id="header_edition">Ed<span id="header_iti">iti</span>on</span>
+        <span id="header_edition">Ed<span id="header_it">it</span>ion</span>
       </h1>
       <p>Resources to help you stay well while staying inside.</p>
     </header>
@@ -46,7 +46,7 @@
         <div class="content">
           <div class="image">
             <a href="http://headspace.com/code">
-              <img src="images/HEADSPACE.png" />
+              <img src="media/HEADSPACE.png" />
             </a>
           </div>
           <div class="text">
@@ -60,12 +60,12 @@
         <div class="content">
           <div class="image">
             <a href="https://www.instagram.com/p/B-Z2beDnQ0z/">
-              <img src="images/ISRU.png" />
+              <img src="media/ISRU.png" />
             </a>
           </div>
           <div class="text">
             <h3>
-              <a href="https://www.instagram.com/p/B-Z2beDnQ0z/">Tom Sachs<br/>I.S.R.U. Community Challenge</a>
+              <a href="https://www.instagram.com/p/B-Z2beDnQ0z/">Tom Sachs I.S.R.U. <br/> Community Challenge</a>
             </h3>
             <p>Last week, Tom Sachs <a href="https://www.instagram.com/p/B-Z2beDnQ0z/">unveiled on Instagram</a> his adaptation of the I.S.R.U principles and explained how he and his studio team are working from their personal spaces. He’s invited the NikeCraft community, which includes you, to participate, learn, and share projects over the next few weeks. We would love to hear how you’re working in your space as well.</p>
           </div>
@@ -75,13 +75,14 @@
       <article>
         <div class="content">
           <div class="image">
-            <img src="images/TRAINERS.png" />
+            <img src="media/TRAINERS.png" />
           </div>
           <div class="text">
             <h3>1:1 with a<br/>Nike Master Trainer</h3>
             <p>
               Looking for a personal training session?<br/>
-              Let us know and we'll organize a 1-on-1 digital training session for you with one of our Nike Master Trainers.
+              Let us know and we'll organize a 1-on-1<br/>
+              digital training session for you with one<br/>of our Nike Master Trainers.
             </p>
           </div>
         </div>
@@ -89,10 +90,12 @@
 
       <article>
         <div class="content">
-          <div class="image">
-            <a href="https:/nike.com">
-              <img src="images/DEEPAK.jpeg" />
-            </a>
+          <div class="video">
+            <video width="100%" height="auto" poster="media/DEEPAK_16-9.jpg" preload="none">
+              <source src="media/DEEPAK.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="play-button-overlay">▶</div>
           </div>
           <div class="text">
             <h3>
@@ -100,7 +103,6 @@
             </h3>
             </a>
             <p>Nike Valiant Labs invites Dr. Deepak Chopra to discuss how we can find hope and balance in times of uncertainty and change.</p>
-            <a href="https:/nike.com">LINK</a>
           </div>
         </div>
       </article>
@@ -108,21 +110,28 @@
     </main>
 
     <footer>
-      <!-- <p>
-        <span>We'd love to hear from you.</span>
-        <span>How are you feeling?</span>
-        <span>What are you thinking?</span>
-        <span>What did you think of the resources above?</span>
-        <span>We're in this together, so don't hesitate to reach out.</span>
-      </p> -->
       <span class="internal-use-only">Internal Use Only</span>
-      <img class="logo" src="images/nike.svg"/>
-        <!-- <a href=""><span>Contact</span></a> -->
-
-      <!-- <div class="internal-use">
-        Logo goes here
-      </div> -->
+      <img class="logo" src="media/nike.svg"/>
     </footer>
+
+
+    <script>
+      document.querySelectorAll('div.video').forEach(videoContainer => {
+        let video = videoContainer.querySelector('video');
+        let playButtonOverlay = videoContainer.querySelector('div.play-button-overlay');
+        playButtonOverlay.addEventListener('click', () => { 
+          video.play();
+          video.controls = true;
+          videoContainer.classList.add('playing');
+          playButtonOverlay.style.display = 'none';
+        });
+        // video.addEventListener('pause', () => {
+        //   video.controls = false;
+        //   videoContainer.classList.remove('playing');
+        //   playButtonOverlay.style.display = 'flex';
+        // });
+      });
+    </script>
 
   </body>
 </html>
