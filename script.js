@@ -39,19 +39,14 @@ document.querySelectorAll('div.video').forEach(videoContainer => {
 
 document.addEventListener('DOMContentLoaded', (event) => {
   const urlParams = new URLSearchParams(window.location.search.substring(1));
-  console.log(urlParams);
   const videoParam = urlParams.get('video');
-  console.log(videoParam);
-  if (videoParam == 'play' && window.location.hash) {
+  if (videoParam == 'large' && window.location.hash) {
     let article = document.querySelector('article' + window.location.hash);
     let videoContainer = article.querySelector('div.video');
-    let video = videoContainer.querySelector('video');
-    let playButtonOverlay = videoContainer.querySelector('div.play-button-overlay');
+    // let video = videoContainer.querySelector('video');
+    // let playButtonOverlay = videoContainer.querySelector('div.play-button-overlay');
     let minimizeButton = videoContainer.querySelector('button.minimize-button');
-    // video.play();
-    // video.controls = true;
     videoContainer.classList.add('enlarged');
-    // playButtonOverlay.style.display = 'none';
     minimizeButton.style.display = 'block';
   }
 });
