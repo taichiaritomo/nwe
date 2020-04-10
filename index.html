@@ -48,7 +48,7 @@
     </header>
     <main role="main">
       <h2>April 10, 2020</h2>
-      <article>
+      <article id="headspace">
         <div class="content">
           <div class="image">
             <a href="http://headspace.com/code">
@@ -62,7 +62,7 @@
         </div>
       </article>
 
-      <article>
+      <article id="tom-sachs">
         <div class="content">
           <div class="image">
             <a href="https://www.instagram.com/p/B-Z2beDnQ0z/">
@@ -78,7 +78,7 @@
         </div>
       </article>
 
-      <article>
+      <article id="nike-master-trainer">
         <div class="content">
           <div class="image">
             <img src="media/TRAINERS.png" />
@@ -94,7 +94,7 @@
         </div>
       </article>
 
-      <article>
+      <article id="deepak-chopra">
         <div class="content">
           <div class="video">
             <video width="100%" height="auto" poster="media/DEEPAK_16-9.jpg" preload="none">
@@ -106,13 +106,12 @@
             <button name="enlarge video" class="enlarge-button">↗</button>
           </div>
           <div class="text">
-            <h3>Deepak Chopra: Finding Hope in Uncertain Times</h3>
-            </a>
+            <h3><a>Deepak Chopra: Finding Hope in Uncertain Times</a></h3>
             <p>
               This week NIKE, Inc., held a global livestream
               with Dr. Deepak Chopra to discuss how we can
               find hope and balance in times of uncertainty
-              and change. The event included practical tips<br/>
+              and change. The event included practical tips
               to holistically manage anxiety and find peace
               including Chopra’s STOP methodology.</p>
           </div>
@@ -127,36 +126,7 @@
     </footer>
 
 
-    <script>
-      document.querySelectorAll('div.video').forEach(videoContainer => {
-        let video = videoContainer.querySelector('video');
-        let playButtonOverlay = videoContainer.querySelector('div.play-button-overlay');
-        let minimizeButton = videoContainer.querySelector('button.minimize-button');
-        let enlargeButton = videoContainer.querySelector('button.enlarge-button');
-        playButtonOverlay.addEventListener('click', () => { 
-          video.play();
-          video.controls = true;
-          videoContainer.classList.add('enlarged');
-          playButtonOverlay.style.display = 'none';
-          minimizeButton.style.display = 'block';
-        });
-        minimizeButton.addEventListener('click', () => {
-          videoContainer.classList.remove('enlarged');
-          minimizeButton.style.display = 'none';
-          enlargeButton.style.display = 'block';
-        });
-        enlargeButton.addEventListener('click', () => {
-          videoContainer.classList.add('enlarged');
-          enlargeButton.style.display = 'none';
-          minimizeButton.style.display = 'block';
-        });
-        // video.addEventListener('pause', () => {
-        //   video.controls = false;
-        //   videoContainer.classList.remove('playing');
-        //   playButtonOverlay.style.display = 'flex';
-        // });
-      });
-    </script>
+    <script src="script.js"></script>
 
   </body>
 </html>
