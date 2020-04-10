@@ -4,7 +4,7 @@ $border: 6px solid black
 
 $font-size_m: 24px
 $font-size_l: 40px
-$font-size_xl: 204px
+$font-size_xl: 210px
 
 $letter-spacing_m: 0em
 $letter-spacing_l: -0.045em
@@ -41,12 +41,10 @@ body
   margin: 0 auto
   width: 100%
   padding: $padding_outer
-  max-width: 960px
+  max-width: 980px
 
 a
   color: inherit
-  &:hover
-    color: red
 
 header
   display: flex
@@ -91,10 +89,8 @@ main
     a
       color: inherit
       line-height: inherit
-      border-bottom: none
       &:hover
-        color: red
-        border-bottom: none
+        text-decoration: none
     div.content
       display: flex
       flex-wrap: wrap
@@ -108,10 +104,12 @@ main
           display: block
           width: 100%
           height: auto
+        a img:hover
+          opacity: 0.8
       div.video
         position: relative
         flex: 1 0 33.334%
-        &.playing
+        &.enlarged
           flex: 1 0 100%
           & + .text
             padding-left: 0
@@ -134,6 +132,23 @@ main
           font-size: 2*$font-size_l
           padding-top: 0.15em
           cursor: pointer
+          &:hover
+            background: rgba(255, 255, 255 ,0.2)
+        button.minimize-button, button.enlarge-button
+          display: none
+          position: absolute
+          top: 4px
+          right: 4px
+          border: none
+          border-radius: 8px
+          background: rgba(0,0,0,0.33)
+          color: white
+          font-size: 21px
+          cursor: pointer
+          transition: background 0.25s linear
+          &:hover
+            background: rgba(0,0,0,0.5)
+          // font-weight: bold
 
       div.text
         flex: 1 1 66.666%
@@ -144,7 +159,7 @@ main
           a
             text-decoration: none
             &:hover
-              color: inherit
+              text-decoration: underline
         p:last-child
           margin-bottom: 0
 

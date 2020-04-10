@@ -15,14 +15,11 @@ body {
   margin: 0 auto;
   width: 100%;
   padding: 18px;
-  max-width: 960px;
+  max-width: 980px;
 }
 
 a {
   color: inherit;
-}
-a:hover {
-  color: red;
 }
 
 header {
@@ -36,7 +33,7 @@ header h1 {
   margin-top: 0.15em;
   padding-bottom: 0.175em;
   border-bottom: 6px solid black;
-  font-size: 204px;
+  font-size: 210px;
   font-weight: 600;
   letter-spacing: -0.07em;
   line-height: 0.82;
@@ -59,7 +56,7 @@ header h1 span#header_edition span#header_it {
 header p {
   flex: 1 0 50%;
   margin: 0;
-  padding: 35.7px 0;
+  padding: 36.75px 0;
   border-bottom: 6px solid black;
   font-size: 40px;
   font-weight: 600;
@@ -69,7 +66,7 @@ header p {
 
 main h2 {
   margin: 0;
-  padding: 35.7px 0;
+  padding: 36.75px 0;
   border-bottom: 6px solid black;
   font-size: 40px;
   font-weight: 600;
@@ -87,11 +84,9 @@ main article {
 main article a {
   color: inherit;
   line-height: inherit;
-  border-bottom: none;
 }
 main article a:hover {
-  color: red;
-  border-bottom: none;
+  text-decoration: none;
 }
 main article div.content {
   display: flex;
@@ -109,14 +104,17 @@ main article div.content div.image img {
   width: 100%;
   height: auto;
 }
+main article div.content div.image a img:hover {
+  opacity: 0.8;
+}
 main article div.content div.video {
   position: relative;
   flex: 1 0 33.334%;
 }
-main article div.content div.video.playing {
+main article div.content div.video.enlarged {
   flex: 1 0 100%;
 }
-main article div.content div.video.playing + .text {
+main article div.content div.video.enlarged + .text {
   padding-left: 0;
   padding-top: 1.5em;
 }
@@ -140,6 +138,25 @@ main article div.content div.video div.play-button-overlay {
   padding-top: 0.15em;
   cursor: pointer;
 }
+main article div.content div.video div.play-button-overlay:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+main article div.content div.video button.minimize-button, main article div.content div.video button.enlarge-button {
+  display: none;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.33);
+  color: white;
+  font-size: 21px;
+  cursor: pointer;
+  transition: background 0.25s linear;
+}
+main article div.content div.video button.minimize-button:hover, main article div.content div.video button.enlarge-button:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
 main article div.content div.text {
   flex: 1 1 66.666%;
   padding-left: 3em;
@@ -155,7 +172,7 @@ main article div.content div.text h3 a {
   text-decoration: none;
 }
 main article div.content div.text h3 a:hover {
-  color: inherit;
+  text-decoration: underline;
 }
 main article div.content div.text p:last-child {
   margin-bottom: 0;

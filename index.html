@@ -51,7 +51,7 @@
           </div>
           <div class="text">
             <h3><a href="http://headspace.com/code">Headspace Plus</a></h3>
-            <p>We’ve partnered with Headspace, who’s mission is to improve the health and happiness of the world mindfulness and meditation, to provide you and a friend with a free year-long subscription to the <a href="http://headspace.com/code">Headspace Plus app</a>. Code: PLAYINSIDE</p>
+            <p>We’ve partnered with Headspace, who’s mission is to improve the health and happiness of the world through mindfulness and meditation, to provide you and a friend with a free year-long subscription to the <a href="http://headspace.com/code">Headspace Plus app</a>. Code: PLAYINSIDE</p>
           </div>
         </div>
       </article>
@@ -96,6 +96,8 @@
               Your browser does not support the video tag.
             </video>
             <div class="play-button-overlay">▶</div>
+            <button name="minimize video" class="minimize-button">↙</button>
+            <button name="enlarge video" class="enlarge-button">↗</button>
           </div>
           <div class="text">
             <h3>Deepak Chopra: Finding Hope in Uncertain Times</h3>
@@ -117,11 +119,24 @@
       document.querySelectorAll('div.video').forEach(videoContainer => {
         let video = videoContainer.querySelector('video');
         let playButtonOverlay = videoContainer.querySelector('div.play-button-overlay');
+        let minimizeButton = videoContainer.querySelector('button.minimize-button');
+        let enlargeButton = videoContainer.querySelector('button.enlarge-button');
         playButtonOverlay.addEventListener('click', () => { 
           video.play();
           video.controls = true;
-          videoContainer.classList.add('playing');
+          videoContainer.classList.add('enlarged');
           playButtonOverlay.style.display = 'none';
+          minimizeButton.style.display = 'block';
+        });
+        minimizeButton.addEventListener('click', () => {
+          videoContainer.classList.remove('enlarged');
+          minimizeButton.style.display = 'none';
+          enlargeButton.style.display = 'block';
+        });
+        enlargeButton.addEventListener('click', () => {
+          videoContainer.classList.add('enlarged');
+          enlargeButton.style.display = 'none';
+          minimizeButton.style.display = 'block';
         });
         // video.addEventListener('pause', () => {
         //   video.controls = false;
