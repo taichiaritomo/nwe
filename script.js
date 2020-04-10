@@ -9,6 +9,7 @@ document.querySelectorAll('div.video').forEach(videoContainer => {
     video.controls = true;
     videoContainer.classList.add('enlarged');
     playButtonOverlay.style.display = 'none';
+    enlargeButton.style.display = 'none';
     minimizeButton.style.display = 'block';
   });
   videoPlayLinks.forEach(videoPlayLink => {
@@ -18,6 +19,7 @@ document.querySelectorAll('div.video').forEach(videoContainer => {
       video.controls = true;
       videoContainer.classList.add('enlarged');
       playButtonOverlay.style.display = 'none';
+      enlargeButton.style.display = 'none';
       minimizeButton.style.display = 'block';
     });
   });
