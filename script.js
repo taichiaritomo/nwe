@@ -1,5 +1,5 @@
 document.querySelectorAll('div.video').forEach(videoContainer => {
-  let videoTitle = videoContainer.closest('article').querySelector('h3 a');
+  let videoPlayLinks = videoContainer.closest('article').querySelectorAll('a.video-link');
   let video = videoContainer.querySelector('video');
   let playButtonOverlay = videoContainer.querySelector('div.play-button-overlay');
   let minimizeButton = videoContainer.querySelector('button.minimize-button');
@@ -11,13 +11,15 @@ document.querySelectorAll('div.video').forEach(videoContainer => {
     playButtonOverlay.style.display = 'none';
     minimizeButton.style.display = 'block';
   });
-  videoTitle.addEventListener('click', (event) => {
-    event.preventDefault();
-    video.play();
-    video.controls = true;
-    videoContainer.classList.add('enlarged');
-    playButtonOverlay.style.display = 'none';
-    minimizeButton.style.display = 'block';
+  videoPlayLinks.forEach(videoPlayLink => {
+    videoPlayLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      video.play();
+      video.controls = true;
+      videoContainer.classList.add('enlarged');
+      playButtonOverlay.style.display = 'none';
+      minimizeButton.style.display = 'block';
+    });
   });
   minimizeButton.addEventListener('click', () => {
     videoContainer.classList.remove('enlarged');

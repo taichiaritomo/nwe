@@ -86,11 +86,6 @@ main
   article
     border-top: 0.5px solid black
     padding-top: 0.5px
-    a
-      color: inherit
-      line-height: inherit
-      &:hover
-        text-decoration: none
     div.content
       display: flex
       flex-wrap: wrap
@@ -148,11 +143,13 @@ main
           transition: background 0.25s linear
           &:hover
             background: rgba(0,0,0,0.5)
-          // font-weight: bold
-
       div.text
         flex: 1 1 66.666%
         padding-left: 3em
+        a
+          line-height: inherit
+          &:hover
+            text-decoration: none
         h3
           margin: 0 0 0.5em
           @include l_type

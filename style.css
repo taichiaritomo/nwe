@@ -81,13 +81,6 @@ main article {
   border-top: 0.5px solid black;
   padding-top: 0.5px;
 }
-main article a {
-  color: inherit;
-  line-height: inherit;
-}
-main article a:hover {
-  text-decoration: none;
-}
 main article div.content {
   display: flex;
   flex-wrap: wrap;
@@ -160,6 +153,12 @@ main article div.content div.video button.minimize-button:hover, main article di
 main article div.content div.text {
   flex: 1 1 66.666%;
   padding-left: 3em;
+}
+main article div.content div.text a {
+  line-height: inherit;
+}
+main article div.content div.text a:hover {
+  text-decoration: none;
 }
 main article div.content div.text h3 {
   margin: 0 0 0.5em;
