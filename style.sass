@@ -231,13 +231,18 @@ footer
   border-top: $border
   @include border-width
   padding: 1em 0
+  display: flex
+  justify-content: space-between
+  align-items: center
   span.internal-use-only
     @include l_type
-    font-size: 1em
+    font-size: 0.8em
     @media screen and (max-width: $breakpoint_m)
-      font-size: 1em
+      font-size: 0.8em
     @media screen and (max-width: $breakpoint_s)
-      font-size: 1em
+      font-size: 0.8em
+    span
+      display: inline-block
   img.logo
-    width: 48px
-    float: right
+    width: 42px
+    // margin-top: 6px

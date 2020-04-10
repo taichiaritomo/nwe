@@ -374,6 +374,9 @@ footer {
   border-top: 6px solid black;
   border-width: 6px;
   padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 @media screen and (max-width: 815px) {
   footer {
@@ -395,7 +398,7 @@ footer span.internal-use-only {
   font-weight: 600;
   letter-spacing: -0.045em;
   line-height: 0.98;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 @media screen and (max-width: 815px) {
   footer span.internal-use-only {
@@ -414,17 +417,19 @@ footer span.internal-use-only {
 }
 @media screen and (max-width: 815px) {
   footer span.internal-use-only {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 }
 @media screen and (max-width: 660px) {
   footer span.internal-use-only {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 }
+footer span.internal-use-only span {
+  display: inline-block;
+}
 footer img.logo {
-  width: 48px;
-  float: right;
+  width: 42px;
 }
 
 /*# sourceMappingURL=style.css.map */
