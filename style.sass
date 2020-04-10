@@ -194,6 +194,8 @@ main
           font-size: 21px
           cursor: pointer
           transition: background 0.25s linear
+          @media screen and (max-width: $breakpoint_s)
+            display: none !important
           &:hover
             background: rgba(0,0,0,0.5)
       

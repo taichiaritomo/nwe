@@ -298,6 +298,11 @@ main article div.content div.video button.minimize-button, main article div.cont
   cursor: pointer;
   transition: background 0.25s linear;
 }
+@media screen and (max-width: 660px) {
+  main article div.content div.video button.minimize-button, main article div.content div.video button.enlarge-button {
+    display: none !important;
+  }
+}
 main article div.content div.video button.minimize-button:hover, main article div.content div.video button.enlarge-button:hover {
   background: rgba(0, 0, 0, 0.5);
 }

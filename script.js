@@ -45,8 +45,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
   if (videoParam == 'large' && window.location.hash) {
     let article = document.querySelector('article' + window.location.hash);
     let videoContainer = article.querySelector('div.video');
-    // let video = videoContainer.querySelector('video');
-    // let playButtonOverlay = videoContainer.querySelector('div.play-button-overlay');
     let minimizeButton = videoContainer.querySelector('button.minimize-button');
     videoContainer.classList.add('enlarged');
     minimizeButton.style.display = 'block';
