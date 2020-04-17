@@ -1,0 +1,419 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Helvetica", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.2;
+}
+@media screen and (max-width: 660px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  padding: 18px;
+  max-width: 980px;
+}
+@media screen and (max-width: 550px) {
+  body {
+    padding: 12px;
+  }
+}
+
+a {
+  color: inherit;
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+header h1 {
+  flex: 1 0 50%;
+  margin: 0;
+  margin-top: 0.15em;
+  padding-bottom: 0.175em;
+  border-bottom: 6px solid black;
+  border-width: 6px;
+  font-size: 210px;
+  font-weight: 600;
+  letter-spacing: -0.07em;
+  line-height: 0.82;
+}
+@media screen and (max-width: 815px) {
+  header h1 {
+    border-width: 5px;
+  }
+}
+@media screen and (max-width: 660px) {
+  header h1 {
+    border-width: 4px;
+  }
+}
+@media screen and (max-width: 550px) {
+  header h1 {
+    border-width: 3px;
+  }
+}
+@media screen and (max-width: 815px) {
+  header h1 {
+    font-size: 168px;
+  }
+}
+@media screen and (max-width: 660px) {
+  header h1 {
+    font-size: 138.6px;
+  }
+}
+@media screen and (max-width: 550px) {
+  header h1 {
+    font-size: 79.8px;
+  }
+}
+header h1 span#header_nike {
+  display: block;
+  margin-left: -0.05em;
+}
+header h1 span#header_wellness {
+  display: block;
+  margin-left: -0.05em;
+}
+header h1 span#header_wellness span#header_we {
+  letter-spacing: -0.04em;
+}
+header h1 span#header_edition {
+  display: block;
+  margin-left: -0.06em;
+}
+header h1 span#header_edition span#header_it {
+  letter-spacing: -0.04em;
+}
+header p {
+  flex: 1 0 50%;
+  margin: 0;
+  padding: 36.75px 0;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+}
+@media screen and (max-width: 815px) {
+  header p {
+    padding: 25.2px 0;
+  }
+}
+@media screen and (max-width: 660px) {
+  header p {
+    padding: 42px 0;
+  }
+}
+@media screen and (max-width: 660px) {
+  header p {
+    padding: 12.6px 0;
+  }
+}
+@media screen and (max-width: 815px) {
+  header p {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 660px) {
+  header p {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 550px) {
+  header p {
+    font-size: 26.4px;
+  }
+}
+
+main h2 {
+  margin: 0;
+  padding: 36.75px 0;
+  border-top: 6px solid black;
+  border-bottom: 6px solid black;
+  border-width: 6px;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+}
+@media screen and (max-width: 815px) {
+  main h2 {
+    padding: 25.2px 0;
+  }
+}
+@media screen and (max-width: 660px) {
+  main h2 {
+    padding: 42px 0;
+  }
+}
+@media screen and (max-width: 660px) {
+  main h2 {
+    padding: 12.6px 0;
+  }
+}
+@media screen and (max-width: 815px) {
+  main h2 {
+    border-width: 5px;
+  }
+}
+@media screen and (max-width: 660px) {
+  main h2 {
+    border-width: 4px;
+  }
+}
+@media screen and (max-width: 550px) {
+  main h2 {
+    border-width: 3px;
+  }
+}
+@media screen and (max-width: 815px) {
+  main h2 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 660px) {
+  main h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 550px) {
+  main h2 {
+    font-size: 26.4px;
+  }
+}
+main h2 + article {
+  border-top: none;
+  padding-top: none;
+}
+main article {
+  border-top: 0.5px solid black;
+  padding-top: 0.5px;
+}
+main article div.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  padding: 3.5em 0;
+}
+@media screen and (max-width: 815px) {
+  main article div.content {
+    padding: 2.5em 0;
+  }
+}
+@media screen and (max-width: 660px) {
+  main article div.content {
+    padding: 2em 0;
+  }
+}
+main article div.content div.image {
+  position: relative;
+  flex: 1 0 33.334%;
+}
+@media screen and (max-width: 660px) {
+  main article div.content div.image {
+    flex: 1 0 100%;
+  }
+}
+main article div.content div.image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+main article div.content div.image a img:hover {
+  opacity: 0.8;
+}
+main article div.content div.video {
+  position: relative;
+  flex: 1 0 33.334%;
+}
+main article div.content div.video.enlarged {
+  flex: 1 0 100%;
+}
+main article div.content div.video.enlarged + .text {
+  padding-left: 0;
+  padding-top: 1.5em;
+}
+main article div.content div.video video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+main article div.content div.video div.play-button-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 80px;
+  padding-top: 0.15em;
+  cursor: pointer;
+}
+main article div.content div.video div.play-button-overlay:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+main article div.content div.video button.minimize-button, main article div.content div.video button.enlarge-button {
+  display: none;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.33);
+  color: white;
+  font-size: 21px;
+  cursor: pointer;
+  transition: background 0.25s linear;
+}
+@media screen and (max-width: 660px) {
+  main article div.content div.video button.minimize-button, main article div.content div.video button.enlarge-button {
+    display: none !important;
+  }
+}
+main article div.content div.video button.minimize-button:hover, main article div.content div.video button.enlarge-button:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+main article div.content div.text {
+  flex: 1 1 66.666%;
+  padding-left: 3em;
+}
+@media screen and (max-width: 815px) {
+  main article div.content div.text {
+    padding-left: 2em;
+  }
+}
+@media screen and (max-width: 660px) {
+  main article div.content div.text {
+    flex: 1 0 100%;
+    padding-left: 0;
+    padding-top: 1.5em;
+  }
+}
+@media screen and (max-width: 660px) {
+  main article div.content div.text {
+    padding-top: 1.25em;
+  }
+}
+main article div.content div.text a {
+  line-height: inherit;
+}
+main article div.content div.text a:hover {
+  text-decoration: none;
+}
+main article div.content div.text h3 {
+  margin: 0 0 0.5em;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+}
+@media screen and (max-width: 815px) {
+  main article div.content div.text h3 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 660px) {
+  main article div.content div.text h3 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 550px) {
+  main article div.content div.text h3 {
+    font-size: 26.4px;
+  }
+}
+main article div.content div.text h3 a {
+  text-decoration: none;
+}
+main article div.content div.text h3 a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 815px) {
+  main article div.content div.text p br {
+    display: none;
+  }
+}
+main article div.content div.text p:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+  border-top: 6px solid black;
+  border-width: 6px;
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 815px) {
+  footer {
+    border-width: 5px;
+  }
+}
+@media screen and (max-width: 660px) {
+  footer {
+    border-width: 4px;
+  }
+}
+@media screen and (max-width: 550px) {
+  footer {
+    border-width: 3px;
+  }
+}
+footer span.internal-use-only {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+  font-size: 0.8em;
+}
+@media screen and (max-width: 815px) {
+  footer span.internal-use-only {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 660px) {
+  footer span.internal-use-only {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 550px) {
+  footer span.internal-use-only {
+    font-size: 26.4px;
+  }
+}
+@media screen and (max-width: 815px) {
+  footer span.internal-use-only {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 660px) {
+  footer span.internal-use-only {
+    font-size: 0.8em;
+  }
+}
+footer span.internal-use-only span {
+  display: inline-block;
+}
+footer img.logo {
+  width: 42px;
+}
+
+/*# sourceMappingURL=style.css.map */
