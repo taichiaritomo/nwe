@@ -40,7 +40,6 @@ header {
 header h1 {
   flex: 1 0 50%;
   margin: 0;
-  margin-top: 0.15em;
   padding-bottom: 0.175em;
   border-bottom: 6px solid black;
   border-width: 6px;
