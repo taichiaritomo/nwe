@@ -10,7 +10,7 @@ $letter-spacing_m: 0em
 $letter-spacing_l: -0.045em
 $letter-spacing_xl: -0.07em
 
-$color_gray: rgb(213, 213, 213)
+$color_gray: rgb(230, 230, 230)
 
 $breakpoint_m: 815px
 $breakpoint_s: 660px
@@ -92,7 +92,7 @@ header
   h1
     flex: 1 0 50%
     margin: 0
-    // margin-top: 0em
+    // margin-top: 0.1em
     padding-bottom: 0.175em
     border-bottom: $border
     @include border-width
@@ -146,6 +146,18 @@ main
         flex: 1 0 33.334%
         @media screen and (max-width: $breakpoint_s)
           flex: 1 0 100%
+        div.placeholder
+          position: relative
+          width: 100%
+          padding-bottom: (1096/1496) * 100%
+          background: $color_gray
+          img
+            display: block
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: auto
         img
           display: block
           width: 100%

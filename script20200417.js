@@ -52,3 +52,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     minimizeButton.style.display = 'block';
   }
 });
+
+// turn image placeholder background transparent when image is loaded
+document.querySelectorAll('div.image div.placeholder').forEach(placeholderElement => {
+  placeholderElement.querySelector('img').addEventListener('lazyloaded', () => {
+    placeholderElement.style.backgroundColor = 'transparent';
+  });
+});
