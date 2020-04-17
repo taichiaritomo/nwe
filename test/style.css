@@ -226,6 +226,9 @@ main article div.content div.image {
     flex: 1 0 100%;
   }
 }
+main article div.content div.image div.placeholder {
+  position: relative;
+}
 main article div.content div.image img {
   display: block;
   width: 100%;
