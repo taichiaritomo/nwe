@@ -7,7 +7,10 @@
 
     <!-- Load index.html from server, not from cache -->
     <!-- Reference: https://stackoverflow.com/questions/13321335/load-index-html-every-time-from-the-server-and-not-from-cache/13321364 -->
-    <meta http-equiv="expires" content="0">
+    <!-- Reference: http://cristian.sulea.net/blog/disable-browser-caching-with-meta-html-tags/ -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     
     <!-- Prevent Search Engine Indexing -->
     <meta name="robots" content="noindex">
