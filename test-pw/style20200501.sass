@@ -276,11 +276,16 @@ footer
       width: 0
       height: 0
     input[type="password"]
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
       width: 7.75em
       height: 2em
       padding: 0.25em 0.3em
       @include l_type
-      border: 1px solid black
+      outline: 1px solid black
+      border: none
+      border-radius: 0
       &::placeholder
         color: black
         text-align: center
@@ -302,13 +307,19 @@ footer
       margin: 0
       @include l_type
       font-size: 0.8em
+      @media screen and (max-width: $breakpoint_m)
+        font-size: 0.8em
+      @media screen and (max-width: $breakpoint_s)
+        font-size: 0.8em
   footer
     position: absolute
     bottom: 0
     left: 0
     right: 0
     border: none
-    text-align: center
-    display: block
+    justify-content: center
+    padding: 1em
+    // text-align: center
+    // display: block
     img.logo
       margin-left: 0.5em

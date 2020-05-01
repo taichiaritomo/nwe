@@ -452,6 +452,9 @@ footer img.logo {
   height: 0;
 }
 #password-container #password-form input[type=password] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 7.75em;
   height: 2em;
   padding: 0.25em 0.3em;
@@ -460,7 +463,9 @@ footer img.logo {
   font-weight: 600;
   letter-spacing: -0.045em;
   line-height: 0.98;
-  border: 1px solid black;
+  outline: 1px solid black;
+  border: none;
+  border-radius: 0;
 }
 @media screen and (max-width: 815px) {
   #password-container #password-form input[type=password] {
@@ -522,14 +527,24 @@ footer img.logo {
     font-size: 26.4px;
   }
 }
+@media screen and (max-width: 815px) {
+  #password-container #password-form p#password-error {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 660px) {
+  #password-container #password-form p#password-error {
+    font-size: 0.8em;
+  }
+}
 #password-container footer {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   border: none;
-  text-align: center;
-  display: block;
+  justify-content: center;
+  padding: 1em;
 }
 #password-container footer img.logo {
   margin-left: 0.5em;
