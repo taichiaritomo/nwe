@@ -104,6 +104,29 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
             </div>
           </div>
         </article>
+        <article id="jamal-liggin">
+          <div class="content">
+            <div class="image">
+              <a href="https://www.youtube.com/watch?v=EYuBZ8Vfm-Q&feature=youtu.be" target="_blank">
+                <div class="placeholder aspect-ratio_16-9">
+                  <noscript>
+                    <img class="noscript" src="media/may-1/JAMALLIGGIN.jpg" />
+                  </noscript>
+                  <img class="lazyload" data-src="media/may-1/JAMALLIGGIN.jpg"/>
+                </div>
+              </a>
+            </div>
+            <div class="text">
+              <h3><a href="https://www.youtube.com/watch?v=EYuBZ8Vfm-Q&feature=youtu.be" target="_blank">NTC Community Workouts on YouTube</a></h3>
+              <p>
+                Every Saturday, Nike Training Club Master Trainers lead free,
+                live-streamed community workouts at 9 a.m. PST.
+                This Saturday, <a href="https://www.youtube.com/watch?v=EYuBZ8Vfm-Q&feature=youtu.be">join</a>
+                Jamal Liggin’s American Football-inspired workout.
+              </p>
+            </div>
+          </div>
+        </article>
         <article id="control">
           <div class="content">
             <div class="image">
@@ -124,29 +147,6 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
                 and she's discovered that many of us drastically overestimate our commitments each week,
                 while underestimating the time we have to ourselves.
                 Click <a href="https://youtu.be/n3kNlFMXslo">here</a> to watch. Presented by TED.
-              </p>
-            </div>
-          </div>
-        </article>
-        <article id="jamal-liggin">
-          <div class="content">
-            <div class="image">
-              <a href="https://www.youtube.com/watch?v=EYuBZ8Vfm-Q&feature=youtu.be" target="_blank">
-                <div class="placeholder aspect-ratio_16-9">
-                  <noscript>
-                    <img class="noscript" src="media/may-1/JAMALLIGGIN.jpg" />
-                  </noscript>
-                  <img class="lazyload" data-src="media/may-1/JAMALLIGGIN.jpg"/>
-                </div>
-              </a>
-            </div>
-            <div class="text">
-              <h3><a href="https://www.youtube.com/watch?v=EYuBZ8Vfm-Q&feature=youtu.be" target="_blank">NTC Community Workouts on YouTube</a></h3>
-              <p>
-                Every Saturday, Nike Training Club Master Trainers lead free,
-                live-streamed community workouts at 9 a.m. PST.
-                This Saturday, <a href="https://www.youtube.com/watch?v=EYuBZ8Vfm-Q&feature=youtu.be">join</a>
-                Jamal Liggin’s American Football-inspired workout.
               </p>
             </div>
           </div>

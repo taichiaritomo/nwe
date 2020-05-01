@@ -49,6 +49,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let videoContainer = article.querySelector('div.video');
     let minimizeButton = videoContainer.querySelector('button.minimize-button');
     videoContainer.classList.add('enlarged');
+    let video = videoContainer.querySelector('video');
+    try {
+      video.play();
+      videoContainer.querySelector('div.play-button-overlay').display='none';
+    } catch (error) {
+      console.error(error);
+    }
     minimizeButton.style.display = 'block';
   }
 });
