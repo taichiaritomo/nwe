@@ -153,6 +153,8 @@ main
           width: 100%
           padding-bottom: (1096/1496) * 100%
           background: $color_gray
+          &.aspect-ratio_16-9
+            padding-bottom: (9/16) * 100%
           img
             display: block
             position: absolute
@@ -271,7 +273,6 @@ footer
     justify-content: center
     align-items: center
     flex-wrap: wrap
-    // flex-direction: column
     h1
       visibility: hidden
       width: 0
@@ -292,9 +293,6 @@ footer
       &::placeholder
         color: black
         text-align: center
-      // &:focus::placeholder
-      //   // outline: 2px solid black
-      //   color: gray
     input::-webkit-textfield-decoration-container
       margin-top: 0.1em
     input::-webkit-credentials-auto-fill-button
@@ -317,17 +315,12 @@ footer
       border-radius: 0
       cursor: pointer
       background: none
-      // &:hover
-      //   text-decoration: underline
     p#password-error
       position: absolute
       top: calc(50% + 2em)
       left: 50%
       transform: translate(-50%, -50%)
       display: block
-      // width: 0
-      // height: 0
-      // margin: 0
       text-align: center
       @include l_type
       font-size: 0.8em
@@ -343,7 +336,5 @@ footer
     border: none
     justify-content: center
     padding: 1em
-    // text-align: center
-    // display: block
     img.logo
       margin-left: 0.5em

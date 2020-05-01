@@ -235,6 +235,9 @@ main article div.content div.image div.placeholder {
   padding-bottom: 73.2620320856%;
   background: #e6e6e6;
 }
+main article div.content div.image div.placeholder.aspect-ratio_16-9 {
+  padding-bottom: 56.25%;
+}
 main article div.content div.image div.placeholder img {
   display: block;
   position: absolute;
