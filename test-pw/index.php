@@ -47,14 +47,14 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
     <meta property="og:url" content="https://nwe.studio">
     <meta property="og:title" content="Nike Edition">
     <meta property="og:description" content="Resources to help you stay well while staying inside.">
-    <meta property="og:image" content="http://nwe.studio/media/title-image.jpg">
+    <meta property="og:image" content="http://nwe.studio/media/title-image-new.jpg">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://nwe.studio">
     <meta name="twitter:title" content="Nike Edition">
     <meta name="twitter:description" content="Resources to help you stay well while staying inside.">
-    <meta name="twitter:image" content="http://nwe.studio/media/title-image.jpg">
+    <meta name="twitter:image" content="http://nwe.studio/media/title-image-new.jpg">
     
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="style20200501.css">
