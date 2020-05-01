@@ -79,6 +79,99 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
         <p>Resources to help you stay well while staying inside.</p>
       </header>
       <main role="main">
+        <!-- May 1 -->
+        <h2 id="may-1">May 1, 2020</h2>
+        <article id="dr-steph">
+          <div class="content">
+            <div class="video">
+              <video width="100%" height="auto" poster="media/may-1/DRSTEPH.jpg" preload="none" playsinline>
+                <source src="media/may-1/DRSTEPH.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="play-button-overlay">▶&#xFE0E;</div>
+              <button name="minimize video" class="minimize-button">↙&#xFE0E;</button>
+              <button name="enlarge video" class="enlarge-button">↗&#xFE0E;</button>
+            </div>
+            <div class="text">
+              <h3><a class="video-link" href="#dr-steph">Dr. Steph Cacioppo on Loneliness</a></h3>
+              <p>
+                This week NIKE, Inc., held a global livestream with Dr. Steph Cacioppo,
+                Nike’s resident neuroscientist and expert on loneliness.
+                Dr. Steph discussed how we can train our brains to be less lonely and
+                why movement can help. Click <a class="video-link" href="#dr-steph">here</a> to listen to how Dr. Steph
+                encapsulates her advice through the acronym G.R.A.C.E.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article id="control">
+          <div class="content">
+            <div class="image">
+              <a href="https://youtu.be/n3kNlFMXslo" target="_blank">
+                <div class="placeholder">
+                  <noscript>
+                    <img class="noscript" src="media/may-1/CONTROL.jpg" />
+                  </noscript>
+                  <img class="lazyload" data-src="media/may-1/CONTROL.jpg"/>
+                </div>
+              </a>
+            </div>
+            <div class="text">
+              <h3><a href="https://youtu.be/n3kNlFMXslo" target="_blank">How To Gain Control Of Your Free Time</a></h3>
+              <p>
+                There are 168 hours in each week. How do we find time for what matters most?
+                Time management expert Laura Vanderkam studies how busy people spend their lives,
+                and she's discovered that many of us drastically overestimate our commitments each week,
+                while underestimating the time we have to ourselves.
+                Click <a href="https://youtu.be/n3kNlFMXslo">here</a> to watch. Presented by TED.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article id="james-collins">
+          <div class="content">
+            <div class="image">
+              <a href="https://www.bbc.co.uk/sounds/play/p087dmvt" target="_blank">
+                <div class="placeholder">
+                  <noscript>
+                    <img class="noscript" src="media/may-1/JAMESCOLLINS.jpg" />
+                  </noscript>
+                  <img class="lazyload" data-src="media/may-1/JAMESCOLLINS.jpg"/>
+                </div>
+              </a>
+            </div>
+            <div class="text">
+              <h3><a href="https://www.bbc.co.uk/sounds/play/p087dmvt" target="_blank">Looking After Yourself at Home with James Collins</a></h3>
+              <p>
+                In <a href="https://www.bbc.co.uk/sounds/play/p087dmvt">this episode</a> of Don't Tell Me The Score, James Collins chats about looking
+                after oneself and productivity while stuck at home. James focuses on several
+                key areas including how to set up your home environment, the importance of routine,
+                the importance of making sport a daily habit, and setting boundaries. Presented by the BBC.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article id="dos-and-donts">
+          <div class="content">
+            <div class="video">
+              <video width="100%" height="auto" poster="media/may-1/DOSANDDONTS.jpg" preload="none" playsinline>
+                <source src="media/may-1/DOSANDDONTS.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="play-button-overlay">▶&#xFE0E;</div>
+              <button name="minimize video" class="minimize-button">↙&#xFE0E;</button>
+              <button name="enlarge video" class="enlarge-button">↗&#xFE0E;</button>
+            </div>
+            <div class="text">
+              <h3><a class="video-link" href="#dos-and-donts">Marketing DOs and DONTs</a></h3>
+              <p>
+                We've gone straight to the experts and found exactly what to do and what not to do
+                when it comes to performance marketing. Sexy, right?
+                Click <a class="video-link" href="#dr-steph">here</a> for some helpful tips.
+              </p>
+            </div>
+          </div>
+        </article>
 
         <!-- April 24 -->
         <h2 id="april-24">April 24, 2020</h2>
@@ -332,7 +425,7 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
       <div id="password-container">
         <form method="post" action="" id="password-form" autocomplete="off">
           <!-- <h1>Enter Password</h1> -->
-          <input type="password" name="pass" placeholder="Enter Password">
+          <input type="password" name="pass" placeholder="Enter Password" autocomplete="new-password">
           <input type="submit" name="submit_pass" value="DO SUBMIT">
           <?php if ($error): ?>
             <p id="password-error"><?php echo $error;?></p>

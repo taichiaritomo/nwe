@@ -286,6 +286,11 @@ footer
         text-align: center
       &:focus
         outline: 1px solid black
+    input::-webkit-credentials-auto-fill-button
+      visibility: hidden
+      pointer-events: none
+      position: absolute
+      right: 0
     input[type="submit"]
       display: block
       width: 0

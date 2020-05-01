@@ -484,6 +484,12 @@ footer img.logo {
 #password-container #password-form input[type=password]:focus {
   outline: 1px solid black;
 }
+#password-container #password-form input::-webkit-credentials-auto-fill-button {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
 #password-container #password-form input[type=submit] {
   display: block;
   width: 0;
