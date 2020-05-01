@@ -38,21 +38,21 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
     <meta name="robots" content="noindex">
 
     <!-- Primary Meta Tags -->
-    <title>Nike Wellness Edition</title>
-    <meta name="title" content="Nike Wellness Edition">
+    <title>Nike Edition</title>
+    <meta name="title" content="Nike Edition">
     <meta name="description" content="Resources to help you stay well while staying inside.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nwe.studio">
-    <meta property="og:title" content="Nike Wellness Edition">
+    <meta property="og:title" content="Nike Edition">
     <meta property="og:description" content="Resources to help you stay well while staying inside.">
     <meta property="og:image" content="http://nwe.studio/media/title-image.jpg">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://nwe.studio">
-    <meta name="twitter:title" content="Nike Wellness Edition">
+    <meta name="twitter:title" content="Nike Edition">
     <meta name="twitter:description" content="Resources to help you stay well while staying inside.">
     <meta name="twitter:image" content="http://nwe.studio/media/title-image.jpg">
     
@@ -85,7 +85,7 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
           <div class="content">
             <div class="video">
               <video width="100%" height="auto" poster="media/may-1/DRSTEPH.jpg" preload="none" playsinline>
-                <source src="media/may-1/DRSTEPH.mp4" type="video/mp4">
+                <source src="media/may-1/DRSTEPH-optimized.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
               <div class="play-button-overlay">▶&#xFE0E;</div>
@@ -425,7 +425,7 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
       <div id="password-container">
         <form method="post" action="" id="password-form" autocomplete="off">
           <!-- <h1>Enter Password</h1> -->
-          <input type="password" name="pass" placeholder="Enter Password" autocomplete="new-password">
+          <input type="password" name="pass" placeholder="Enter Password" autocomplete="new-password" autofocus>
           <input type="submit" name="submit_pass" value="DO SUBMIT">
           <?php if ($error): ?>
             <p id="password-error"><?php echo $error;?></p>

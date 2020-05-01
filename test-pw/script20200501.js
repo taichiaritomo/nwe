@@ -60,6 +60,9 @@ document.querySelectorAll('div.image div.placeholder').forEach(placeholderElemen
   });
 });
 
-document.querySelectorAll('div#password-container').forEach(passwordContainer => {
-  passwordContainer.querySelector('input[type="password"]').focus();
-});
+// focus on load
+window.onload = function() {
+  document.querySelectorAll('div#password-container').forEach(passwordContainer => {
+    passwordContainer.querySelector('input[type="password"]').focus();
+  });
+}
