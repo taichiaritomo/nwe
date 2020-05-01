@@ -280,8 +280,9 @@ footer
       -moz-appearance: none
       appearance: none
       width: 7.75em
-      height: 2em
+      // height: 2em
       padding: 0.25em 0.3em
+      vertical-align: 1em
       @include l_type
       outline: 1px solid black
       border: none
@@ -290,7 +291,9 @@ footer
         color: black
         text-align: center
       &:focus
-        outline: 1px solid black
+        outline: 2px solid black
+    input::-webkit-textfield-decoration-container
+      margin-top: 0.1em
     input::-webkit-credentials-auto-fill-button
       visibility: hidden
       pointer-events: none

@@ -456,8 +456,8 @@ footer img.logo {
   -moz-appearance: none;
   appearance: none;
   width: 7.75em;
-  height: 2em;
   padding: 0.25em 0.3em;
+  vertical-align: 1em;
   font-family: "Helvetica Neue", sans-serif;
   font-size: 40px;
   font-weight: 600;
@@ -487,7 +487,10 @@ footer img.logo {
   text-align: center;
 }
 #password-container #password-form input[type=password]:focus {
-  outline: 1px solid black;
+  outline: 2px solid black;
+}
+#password-container #password-form input::-webkit-textfield-decoration-container {
+  margin-top: 0.1em;
 }
 #password-container #password-form input::-webkit-credentials-auto-fill-button {
   visibility: hidden;
