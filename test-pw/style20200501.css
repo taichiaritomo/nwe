@@ -444,7 +444,6 @@ footer img.logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 #password-container #password-form h1 {
   visibility: hidden;
@@ -455,7 +454,8 @@ footer img.logo {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 7.75em;
+  width: 5.1em;
+  height: 1.8em;
   padding: 0.25em 0.3em;
   vertical-align: 1em;
   font-family: "Helvetica Neue", sans-serif;
@@ -463,7 +463,8 @@ footer img.logo {
   font-weight: 600;
   letter-spacing: -0.045em;
   line-height: 0.98;
-  outline: 1px solid black;
+  outline: 2px solid black;
+  outline-offset: -1px;
   border: none;
   border-radius: 0;
 }
@@ -486,9 +487,6 @@ footer img.logo {
   color: black;
   text-align: center;
 }
-#password-container #password-form input[type=password]:focus {
-  outline: 2px solid black;
-}
 #password-container #password-form input::-webkit-textfield-decoration-container {
   margin-top: 0.1em;
 }
@@ -499,10 +497,39 @@ footer img.logo {
   right: 0;
 }
 #password-container #password-form input[type=submit] {
-  display: block;
-  width: 0;
-  height: 0;
-  visibility: hidden;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 1.8em;
+  margin-left: 0.5em;
+  padding: 0.25em 0.35em;
+  vertical-align: 1em;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+  outline: 2px solid black;
+  outline-offset: -1px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  background: none;
+}
+@media screen and (max-width: 815px) {
+  #password-container #password-form input[type=submit] {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 660px) {
+  #password-container #password-form input[type=submit] {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 550px) {
+  #password-container #password-form input[type=submit] {
+    font-size: 26.4px;
+  }
 }
 #password-container #password-form p#password-error {
   display: block;

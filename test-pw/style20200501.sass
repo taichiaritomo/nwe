@@ -270,7 +270,7 @@ footer
     display: flex
     justify-content: center
     align-items: center
-    flex-direction: column
+    // flex-direction: column
     h1
       visibility: hidden
       width: 0
@@ -279,18 +279,21 @@ footer
       -webkit-appearance: none
       -moz-appearance: none
       appearance: none
-      width: 7.75em
+      width: 5.1em
+      height: 1.8em
       padding: 0.25em 0.3em
       vertical-align: 1em
       @include l_type
-      outline: 1px solid black
+      outline: 2px solid black
+      outline-offset: -1px
       border: none
       border-radius: 0
       &::placeholder
         color: black
         text-align: center
-      &:focus
-        outline: 2px solid black
+      // &:focus::placeholder
+      //   // outline: 2px solid black
+      //   color: gray
     input::-webkit-textfield-decoration-container
       margin-top: 0.1em
     input::-webkit-credentials-auto-fill-button
@@ -299,10 +302,22 @@ footer
       position: absolute
       right: 0
     input[type="submit"]
-      display: block
-      width: 0
-      height: 0
-      visibility: hidden
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+      height: 1.8em
+      margin-left: 0.5em
+      padding: 0.25em 0.35em
+      vertical-align: 1em
+      @include l_type
+      outline: 2px solid black
+      outline-offset: -1px
+      border: none
+      border-radius: 0
+      cursor: pointer
+      background: none
+      // &:hover
+      //   text-decoration: underline
     p#password-error
       display: block
       height: 0
