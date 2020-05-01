@@ -270,6 +270,7 @@ footer
     display: flex
     justify-content: center
     align-items: center
+    flex-wrap: wrap
     // flex-direction: column
     h1
       visibility: hidden
@@ -319,9 +320,15 @@ footer
       // &:hover
       //   text-decoration: underline
     p#password-error
+      position: absolute
+      top: calc(50% + 2em)
+      left: 50%
+      transform: translate(-50%, -50%)
       display: block
-      height: 0
-      margin: 0
+      // width: 0
+      // height: 0
+      // margin: 0
+      text-align: center
       @include l_type
       font-size: 0.8em
       @media screen and (max-width: $breakpoint_m)

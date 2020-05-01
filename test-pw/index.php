@@ -426,7 +426,7 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
         <form method="post" action="" id="password-form" autocomplete="off">
           <!-- <h1>Enter Password</h1> -->
           <input type="password" name="pass" placeholder="Password" autocomplete="new-password" autofocus>
-          <input type="submit" name="submit_pass" value="ENTER">
+          <input type="submit" name="submit_pass" value="Enter">
           <?php if ($error): ?>
             <p id="password-error"><?php echo $error;?></p>
           <?php endif ?>
