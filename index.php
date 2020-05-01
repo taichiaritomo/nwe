@@ -121,8 +121,8 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
               <p>
                 Every Saturday, Nike Training Club Master Trainers lead free,
                 live-streamed community workouts at 9 a.m. PST.
-                This Saturday, <a href="https://www.youtube.com/watch?v=EYuBZ8Vfm-Q&feature=youtu.be">join</a>
-                Jamal Liggin’s American Football-inspired workout.
+                This Saturday, join Jamal Liggin’s American Football-inspired workout.
+                No equipment needed. Livestream <a href="https://www.youtube.com/watch?v=EYuBZ8Vfm-Q&feature=youtu.be">here</a>.
               </p>
             </div>
           </div>
