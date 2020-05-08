@@ -1,0 +1,373 @@
+$padding_outer: 18px
+$padding_section-vertical: 2.5em
+$border: 6px solid black
+
+$font-size_m: 24px
+$font-size_l: 40px
+$font-size_xl: 210px
+
+$letter-spacing_m: 0em
+$letter-spacing_l: -0.045em
+$letter-spacing_xl: -0.07em
+
+$color_gray: rgb(230, 230, 230)
+
+$breakpoint_m: 815px
+$breakpoint_s: 660px
+$breakpoint_xs: 550px
+
+@mixin xl_type
+  font-family: 'Helvetica Neue', sans-serif
+  font-size: $font-size_xl
+  font-weight: 600
+  letter-spacing: $letter-spacing_xl
+  line-height: 0.82
+  @media screen and (max-width: $breakpoint_m)
+    font-size: 0.8*$font-size_xl
+  @media screen and (max-width: $breakpoint_s)
+    font-size: 0.66*$font-size_xl
+  @media screen and (max-width: $breakpoint_xs)
+    font-size: 0.38*$font-size_xl
+
+@mixin l_type
+  font-family: 'Helvetica Neue', sans-serif
+  font-size: $font-size_l
+  font-weight: 600
+  letter-spacing: $letter-spacing_l
+  line-height: 0.98
+  @media screen and (max-width: $breakpoint_m)
+    font-size: 0.9*$font-size_l
+  @media screen and (max-width: $breakpoint_s)
+    font-size: 0.8*$font-size_l
+  @media screen and (max-width: $breakpoint_xs)
+    font-size: 0.66*$font-size_l
+
+@mixin m_type
+  font-family: 'Helvetica Neue', sans-serif
+  font-size: $font-size_m
+  font-weight: 400
+  letter-spacing: $letter-spacing_m
+  line-height: 1.2
+  @media screen and (max-width: $breakpoint_s)
+    font-size: 0.75*$font-size_m
+
+@mixin h2_padding
+  padding: 0.175 * $font-size_xl 0
+  @media screen and (max-width: $breakpoint_m)
+    padding: 0.12 * $font-size_xl 0
+  @media screen and (max-width: $breakpoint_s)
+    padding: 0.2 * $font-size_xl 0
+  @media screen and (max-width: $breakpoint_s)
+    padding: 0.06 * $font-size_xl 0
+
+@mixin border-width
+  border-width: 6px
+  @media screen and (max-width: $breakpoint_m)
+    border-width: 5px
+  @media screen and (max-width: $breakpoint_s)
+    border-width: 4px
+  @media screen and (max-width: $breakpoint_xs)
+    border-width: 3px
+
+*
+  box-sizing: border-box
+
+html
+  font-family: 'Helvetica', sans-serif
+  @include m_type
+
+body
+  margin: 0 auto
+  width: 100%
+  padding: $padding_outer
+  max-width: 980px
+  @media screen and (max-width: $breakpoint_xs)
+    padding: 12px
+
+a
+  color: inherit
+
+header
+  display: flex
+  align-items: flex-end
+  flex-wrap: wrap
+  h1
+    flex: 1 0 50%
+    margin: 0
+    // margin-top: 0.1em
+    padding-bottom: 0.175em
+    border-bottom: $border
+    @include border-width
+    @include xl_type
+    span#header_nike
+      display: block
+      margin-left: -0.05em
+    span#header_wellness
+      display: block
+      margin-left: -0.05em
+      span#header_we
+        letter-spacing: -0.04em
+    span#header_edition
+      display: block
+      margin-left: -0.06em
+      span#header_it
+        letter-spacing: -0.04em
+  p
+    flex: 1 0 50%
+    margin: 0
+    // padding: 0.175 * $font-size_xl 0
+    @include h2_padding
+    @include l_type
+  
+main
+  h2
+    margin: 0
+    @include h2_padding
+    border-top: $border
+    border-bottom: $border
+    @include border-width
+    @include l_type
+  h2 + article
+    border-top: none
+    padding-top: none
+  article
+    border-top: 0.5px solid black
+    padding-top: 0.5px
+    div.content
+      display: flex
+      flex-wrap: wrap
+      align-items: flex-start
+      width: 100%
+      padding: 3.5em 0
+      @media screen and (max-width: $breakpoint_m)
+        padding: 2.5em 0
+      @media screen and (max-width: $breakpoint_s)
+        padding: 2em 0
+      div.image
+        position: relative
+        flex: 1 0 33.334%
+        @media screen and (max-width: $breakpoint_s)
+          flex: 1 0 100%
+        div.placeholder
+          position: relative
+          width: 100%
+          padding-bottom: (1096/1496) * 100%
+          background: $color_gray
+          &.aspect-ratio_16-9
+            padding-bottom: (9/16) * 100%
+          img
+            display: block
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: auto
+        img
+          display: block
+          width: 100%
+          height: auto
+        a img:hover
+          opacity: 0.8
+      
+      div.video
+        position: relative
+        flex: 1 0 33.334%
+        &.enlarged
+          flex: 1 0 100%
+          & + .text
+            padding-left: 0
+            padding-top: 1.5em
+        video
+          display: block
+          width: 100%
+          height: auto
+        div.play-button-overlay
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          display: flex
+          justify-content: center
+          align-items: center
+          background: rgba(0,0,0,0)
+          color: white
+          font-size: 2*$font-size_l
+          padding-top: 0.15em
+          cursor: pointer
+          &:hover
+            background: rgba(255, 255, 255 ,0.2)
+        button.minimize-button, button.enlarge-button
+          display: none
+          position: absolute
+          top: 4px
+          right: 4px
+          border: none
+          border-radius: 8px
+          background: rgba(0,0,0,0.33)
+          color: white
+          font-size: 21px
+          cursor: pointer
+          transition: background 0.25s linear
+          @media screen and (max-width: $breakpoint_s)
+            display: none !important
+          &:hover
+            background: rgba(0,0,0,0.5)
+      div.audio
+        position: relative
+        flex: 1 0 33.334%
+        img
+          position: relative
+          width: 100%
+        audio
+          position: absolute
+          bottom: 0.5em
+          left: 0.5em
+          right: 0.5em
+          width: calc(100% - 1em)
+          display: none
+        &.playing
+          audio
+            display: block
+        div.play-button-overlay
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          display: flex
+          justify-content: center
+          align-items: center
+          background: rgba(0,0,0,0)
+          color: white
+          font-size: 2*$font-size_l
+          padding-top: 0.15em
+          cursor: pointer
+          &:hover
+            background: rgba(255, 255, 255 ,0.2)
+
+      
+      div.text
+        flex: 1 1 66.666%
+        padding-left: 3.5em
+        @media screen and (max-width: $breakpoint_m)
+          padding-left: 2em
+        @media screen and (max-width: $breakpoint_s)
+          flex: 1 0 100%
+          padding-left: 0
+          padding-top: 1.5em
+        @media screen and (max-width: $breakpoint_s)
+          padding-top: 1.25em
+        a
+          line-height: inherit
+          &:hover
+            text-decoration: none
+        h3
+          margin: 0 0 0.5em
+          @include l_type
+          a
+            text-decoration: none
+            &:hover
+              text-decoration: underline
+        p br
+          @media screen and (max-width: 815px)
+            display: none
+        p:last-child
+          margin-bottom: 0
+
+footer
+  border-top: $border
+  @include border-width
+  padding: 1em 0
+  display: flex
+  justify-content: space-between
+  align-items: center
+  span.internal-use-only
+    @include l_type
+    font-size: 0.8em
+    @media screen and (max-width: $breakpoint_m)
+      font-size: 0.8em
+    @media screen and (max-width: $breakpoint_s)
+      font-size: 0.8em
+    span
+      display: inline-block
+  img.logo
+    width: 42px
+
+#password-container
+  #password-form
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    margin: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    h1
+      visibility: hidden
+      width: 0
+      height: 0
+    input[type="password"]
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+      width: 5.1em
+      height: 1.8em
+      padding: 0.25em 0.3em
+      vertical-align: 1em
+      @include l_type
+      outline: 2px solid black
+      outline-offset: -1px
+      border: none
+      border-radius: 0
+      &::placeholder
+        color: black
+        text-align: center
+    input::-webkit-textfield-decoration-container
+      margin-top: 0.1em
+    input::-webkit-credentials-auto-fill-button
+      visibility: hidden
+      pointer-events: none
+      position: absolute
+      right: 0
+    input[type="submit"]
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+      height: 1.8em
+      margin-left: 0.5em
+      padding: 0.25em 0.35em
+      vertical-align: 1em
+      @include l_type
+      outline: 2px solid black
+      outline-offset: -1px
+      border: none
+      border-radius: 0
+      cursor: pointer
+      background: none
+    p#password-error
+      position: absolute
+      top: calc(50% + 2em)
+      left: 50%
+      transform: translate(-50%, -50%)
+      display: block
+      text-align: center
+      @include l_type
+      font-size: 0.8em
+      @media screen and (max-width: $breakpoint_m)
+        font-size: 0.8em
+      @media screen and (max-width: $breakpoint_s)
+        font-size: 0.8em
+  footer
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    border: none
+    justify-content: center
+    padding: 1em
+    img.logo
+      margin-left: 0.5em

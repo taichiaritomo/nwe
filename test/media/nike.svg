@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="24px" viewBox="0 0 63 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="-4.54747351e-13 0 61 0 61 22 -4.54747351e-13 22"></polygon>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" transform="translate(1.000000, 1.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2"></g>
+            <path d="M16.3522613,19.5851898 C11.5415551,21.6752659 3.99298124,24.0745225 0.84937764,18.8809884 C-0.903589933,15.9981516 0.20869243,11.5097899 2.79596613,7.41625492 C4.4423101,4.79754223 6.55930765,2.39945085 8.67555034,0 C7.49967124,1.95859667 4.18528116,8.51644829 8.52589986,11.795277 C10.2156481,13.0496722 13.1875217,13.1813458 16.8867003,12.1912689 L61,0.198093069 L16.3522613,19.5851898 Z" id="Fill-1" fill="#010202" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>
