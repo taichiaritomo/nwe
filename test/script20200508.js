@@ -76,23 +76,6 @@ document.querySelectorAll('div.audio').forEach(audioContainer => {
   });
 });
 
-// AUDIO DEEPLINK
-// const urlParams = new URLSearchParams(window.location.search.substring(1));
-// const audioParam = urlParams.get('audio');
-// if (audioParam == 'play' && window.location.hash) {
-//   let article = document.querySelector('article' + window.location.hash);
-//   let audioContainer = article.querySelector('div.audio');
-//   audioContainer.classList.add('playing');
-//   let audio = audioContainer.querySelector('audio');
-//   audio.autoplay = true;
-//   // try {
-//   //   audio.play();
-//   //   audioContainer.querySelector('div.play-button-overlay').display = 'none';
-//   // } catch (error) {
-//   //   console.error(error);
-//   // }
-// }
-
 // turn image placeholder background transparent when image is loaded
 document.querySelectorAll('div.placeholder').forEach(placeholderElement => {
   placeholderElement.querySelector('img').addEventListener('lazyloaded', () => {

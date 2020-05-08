@@ -284,6 +284,7 @@ main article div.content div.video div.play-button-overlay {
   font-size: 80px;
   padding-top: 0.15em;
   cursor: pointer;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.33);
 }
 main article div.content div.video div.play-button-overlay:hover {
   background: rgba(255, 255, 255, 0.2);
@@ -349,6 +350,7 @@ main article div.content div.audio div.play-button-overlay {
   font-size: 80px;
   padding-top: 0.15em;
   cursor: pointer;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.33);
 }
 main article div.content div.audio div.play-button-overlay:hover {
   background: rgba(255, 255, 255, 0.2);
@@ -631,4 +633,4 @@ footer img.logo {
   margin-left: 0.5em;
 }
 
-/*# sourceMappingURL=style20200501.css.map */
+/*# sourceMappingURL=style20200508.css.map */

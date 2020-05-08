@@ -53,7 +53,7 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
     <meta name="twitter:image" content="http://nwe.studio/media/title-image-new.jpg">
     
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style20200501.css">
+    <link rel="stylesheet" href="style20200508.css">
 
     <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -82,17 +82,15 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
             <div class="audio">
               <div class="placeholder">
                 <noscript>
-                  <img class="noscript" src="media/may-8/INSIDE.png" />
+                  <img class="noscript" src="media/may-8/INSIDE.jpg" />
                 </noscript>
-                <img class="lazyload" data-src="media/may-8/INSIDE.png"/>
+                <img class="lazyload" data-src="media/may-8/INSIDE.jpg"/>
               </div>
               <audio controls preload="none" controlsList="nodownload">
                 <source src="media/may-8/InsideNike_004_IbtihajMuhammed.mp3" type="audio/mpeg">
                 Your browser does not support the audio tag.
               </audio>
               <div class="play-button-overlay">▶&#xFE0E;</div>
-              <!-- <button name="minimize video" class="minimize-button">↙&#xFE0E;</button>
-              <button name="enlarge video" class="enlarge-button">↗&#xFE0E;</button> -->
             </div>
             <div class="text">
               <h3><a class="audio-link" href="#ibtihaj-muhammad">"Inside Nike" with Ibtihaj Muhammad</a></h3>
@@ -103,6 +101,72 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
                 to Olympic medal-stand fencer, opens up about the difficulties of
                 living apart from her family, unpacks her newfound love of distance running,
                 and offers heartfelt advice for coping with the new coronavirus normal.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article id="laraaji">
+          <div class="content">
+            <div class="image">
+              <a href="https://open.spotify.com/playlist/5PbCuN4ZYijZgppYKbDKM1?si=h8Q-lB0fRYKukmOXpYTq3w" target="_blank">
+                <div class="placeholder">
+                  <noscript>
+                    <img class="noscript" src="media/may-8/LARAAJI.jpg" />
+                  </noscript>
+                  <img class="lazyload" data-src="media/may-8/LARAAJI.jpg"/>
+                </div>
+              </a>
+            </div>
+            <div class="text">
+              <h3><a href="https://open.spotify.com/playlist/5PbCuN4ZYijZgppYKbDKM1?si=h8Q-lB0fRYKukmOXpYTq3w" target="_blank">Featured Playlist: Meditate with Laraaji</a></h3>
+              <p>
+                A selection of tracks for deep relaxation and contemplation created by musician,
+                mystic and laughter meditation practitioner Laraaji. Recommended by Nike Design Radio.
+                Listen <a href="https://open.spotify.com/playlist/5PbCuN4ZYijZgppYKbDKM1?si=h8Q-lB0fRYKukmOXpYTq3w" target="_blank">here</a>.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article id="traci-copeland">
+          <div class="content">
+            <div class="image">
+              <a href="https://www.youtube.com/watch?v=cnB3e0jLU5A" target="_blank">
+                <div class="placeholder">
+                  <noscript>
+                    <img class="noscript" src="media/may-8/TRACI.jpg" />
+                  </noscript>
+                  <img class="lazyload" data-src="media/may-8/TRACI.jpg"/>
+                </div>
+              </a>
+            </div>
+            <div class="text">
+              <h3><a href="https://www.youtube.com/watch?v=cnB3e0jLU5A" target="_blank">Live Community Workout with Traci Copeland</a></h3>
+              <p>
+                Join Nike Master Trainer Traci Copeland this Saturday at 9am PST for a cardio dance workout.
+                <a href="https://www.youtube.com/watch?v=cnB3e0jLU5A" target="_blank">Subscribe</a> to the Nike YouTube channel to join the workout and set a reminder so you don't miss out.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article id="james-collins">
+          <div class="content">
+            <div class="image">
+              <a href="https://www.bbc.co.uk/sounds/play/p087dmvt" target="_blank">
+                <div class="placeholder">
+                  <noscript>
+                    <img class="noscript" src="media/may-8/JAMES.jpg" />
+                  </noscript>
+                  <img class="lazyload" data-src="media/may-8/JAMES.jpg"/>
+                </div>
+              </a>
+            </div>
+            <div class="text">
+              <h3><a href="https://www.bbc.co.uk/sounds/play/p087dmvt" target="_blank">Looking After Yourself at Home with James Collins</a></h3>
+              <p>
+                In <a href="https://www.bbc.co.uk/sounds/play/p087dmvt" target="_blank">this episode</a> of Don't Tell Me The Score, James Collins chats about productivity and
+                looking after oneself while stuck at home. James focuses on several key areas including
+                how to set up your home environment, the importance of routine, the importance of making
+                sport a daily habit, and setting boundaries. Presented by the BBC.
               </p>
             </div>
           </div>
@@ -151,7 +215,7 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
                 Every Saturday, Nike Training Club Master Trainers lead free,
                 live-streamed community workouts at 9 a.m. PST.
                 This Saturday, join Jamal Liggin’s American Football-inspired workout.
-                No equipment needed. Livestream <a href="https://www.youtube.com/watch?v=EYuBZ8Vfm-Q&feature=youtu.be">here</a>.
+                No equipment needed. Livestream <a href="https://www.youtube.com/watch?v=EYuBZ8Vfm-Q&feature=youtu.be" target="_blank">here</a>.
               </p>
             </div>
           </div>
@@ -175,7 +239,7 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
                 Time management expert Laura Vanderkam studies how busy people spend their lives,
                 and she's discovered that many of us drastically overestimate our commitments each week,
                 while underestimating the time we have to ourselves.
-                Click <a href="https://youtu.be/n3kNlFMXslo">here</a> to watch. Presented by TED.
+                Click <a href="https://youtu.be/n3kNlFMXslo" target="_blank">here</a> to watch. Presented by TED.
               </p>
             </div>
           </div>
@@ -196,7 +260,7 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
               <p>
                 We've gone straight to the experts and found exactly what to do and what not to do
                 when it comes to performance marketing. Sexy, right?
-                Click <a class="video-link" href="#dr-steph">here</a> for some helpful tips.
+                Click <a class="video-link" href="#dr-steph" target="_blank">here</a> for some helpful tips.
               </p>
             </div>
           </div>
@@ -218,7 +282,7 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
             </div>
             <div class="text">
               <h3><a href="https://podcasts.apple.com/us/podcast/angela-duckworth-how-stress-can-make-us-stronger/id1414073313?i=1000471653559" target="_blank">How Stress Can Make Us Stronger</a></h3>
-              <p>According to psychologist Angela Duckworth, stress can actually help us adapt to difficult situations. <a href="https://podcasts.apple.com/us/podcast/angela-duckworth-how-stress-can-make-us-stronger/id1414073313?i=1000471653559">In this episode</a> of TRAINED, Nike’s holistic fitness podcast,  Nike Sir. Director of Performance Ryan Flaherty speaks with Angela about how a shift in mindset can make our stress work for us.</p>
+              <p>According to psychologist Angela Duckworth, stress can actually help us adapt to difficult situations. <a href="https://podcasts.apple.com/us/podcast/angela-duckworth-how-stress-can-make-us-stronger/id1414073313?i=1000471653559" target="_blank">In this episode</a> of TRAINED, Nike’s holistic fitness podcast,  Nike Sir. Director of Performance Ryan Flaherty speaks with Angela about how a shift in mindset can make our stress work for us.</p>
             </div>
           </div>
         </article>
@@ -236,7 +300,7 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
             </div>
             <div class="text">
               <h3><a href="https://www.ted.com/talks/guy_winch_why_we_all_need_to_practice_emotional_first_aid?referrer=playlist-how_to_practice_emotional_first_aid" target="_blank">Why We All Need To Practice Emotional First Aid</a></h3>
-              <p>Many of us deal with common psychological-health issues on our own — but we don’t have to. Psychologist and author Guy Winch makes a <a href="https://www.ted.com/talks/guy_winch_why_we_all_need_to_practice_emotional_first_aid?referrer=playlist-how_to_practice_emotional_first_aid">compelling case</a> to practice emotional hygiene. Presented by TED.</p>
+              <p>Many of us deal with common psychological-health issues on our own — but we don’t have to. Psychologist and author Guy Winch makes a <a href="https://www.ted.com/talks/guy_winch_why_we_all_need_to_practice_emotional_first_aid?referrer=playlist-how_to_practice_emotional_first_aid" target="_blank">compelling case</a> to practice emotional hygiene. Presented by TED.</p>
             </div>
           </div>
         </article>
@@ -293,7 +357,7 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
             </div>
             <div class="text">
               <h3><a href="https://onboarding.trydaylight.com/daylight/access/100%233/1" target="_blank">Daylight</a></h3>
-              <p>The Daylight App is your expert guide through worry, stress and anxiety. It listens and talks to you, understands your challenges and goals, and guides you through learning and practicing proven strategies for reducing worry and anxiety in your life. Get started <a href="https://onboarding.trydaylight.com/daylight/access/100%233/1">here</a>.</p>
+              <p>The Daylight App is your expert guide through worry, stress and anxiety. It listens and talks to you, understands your challenges and goals, and guides you through learning and practicing proven strategies for reducing worry and anxiety in your life. Get started <a href="https://onboarding.trydaylight.com/daylight/access/100%233/1" target="_blank">here</a>.</p>
             </div>
           </div>
         </article>
@@ -311,7 +375,7 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
             </div>
             <div class="text">
               <h3><a href="mailto:askthedietitian@nike.com?subject=" target="_blank">1:1 with a Nike Dietitian</a></h3>
-              <p>Whether you're looking for answers to simple food-related questions or need advice on weight loss or sports nutrition, nutritionist Amy Anderson is here to help. Amy’s a licensed Dietitian, former NBA dancer and overall food lover. Email Amy <a href="mailto:askthedietitian@nike.com?subject=">here</a> with quick nutrition questions or to schedule a virtual session.</p>
+              <p>Whether you're looking for answers to simple food-related questions or need advice on weight loss or sports nutrition, nutritionist Amy Anderson is here to help. Amy’s a licensed Dietitian, former NBA dancer and overall food lover. Email Amy <a href="mailto:askthedietitian@nike.com?subject=" target="_blank">here</a> with quick nutrition questions or to schedule a virtual session.</p>
             </div>
           </div>
         </article>
@@ -329,7 +393,7 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
             </div>
             <div class="text">
               <h3><a href="https://downloads.ctfassets.net/ok9wyucfxe4q/77W0z1Nat13X35wcQJj9No/625629a84ee908e309a39087d6f0526a/GlobalWellnessTrends2020.pdf" target="_blank">The Future of Wellness 2020</a></h3>
-              <p>This past January, the Global Wellness Summit trends forecasting team predicted new directions in health and wellness. The forecast is based on perspectives from a range of worldwide experts, including economists, academics, futurists and the CEOs of international corporations from all related fields within the $4.5 trillion wellness economy. Check out their powerfully informed predictions <a href="https://downloads.ctfassets.net/ok9wyucfxe4q/77W0z1Nat13X35wcQJj9No/625629a84ee908e309a39087d6f0526a/GlobalWellnessTrends2020.pdf">here</a>.</p>
+              <p>This past January, the Global Wellness Summit trends forecasting team predicted new directions in health and wellness. The forecast is based on perspectives from a range of worldwide experts, including economists, academics, futurists and the CEOs of international corporations from all related fields within the $4.5 trillion wellness economy. Check out their powerfully informed predictions <a href="https://downloads.ctfassets.net/ok9wyucfxe4q/77W0z1Nat13X35wcQJj9No/625629a84ee908e309a39087d6f0526a/GlobalWellnessTrends2020.pdf" target="_blank">here</a>.</p>
             </div>
           </div>
         </article>
@@ -347,7 +411,7 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
             </div>
             <div class="text">
               <h3><a href="https://www.theguardian.com/lifeandstyle/2020/mar/17/self-isolation-survival-guide-relationships-coronavirus" target="_blank">Tips To Navigate Isolation</a></h3>
-              <p>With millions of us lying low to limit the spread of COVID-19, <a href="https://www.theguardian.com/lifeandstyle/2020/mar/17/self-isolation-survival-guide-relationships-coronavirus">in this article</a> The Guardian explores how best to manage feeling cooped up for days on end.</p>
+              <p>With millions of us lying low to limit the spread of COVID-19, <a href="https://www.theguardian.com/lifeandstyle/2020/mar/17/self-isolation-survival-guide-relationships-coronavirus" target="_blank">in this article</a> The Guardian explores how best to manage feeling cooped up for days on end.</p>
             </div>
           </div>
         </article>
@@ -470,7 +534,7 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
       </div>
     <?php	endif ?>
 
-    <script src="script20200501.js"></script>
+    <script src="script20200508.js"></script>
     <script src="lazysizes.min.js"></script>
 
   </body>
