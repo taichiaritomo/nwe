@@ -80,8 +80,13 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
         <article id="ibtihaj-muhammad">
           <div class="content">
             <div class="audio">
-              <img class="poster-image" src="media/may-8/INSIDE.png"/>
-              <audio controls preload="none">
+              <div class="placeholder">
+                <noscript>
+                  <img class="noscript" src="media/may-8/INSIDE.png" />
+                </noscript>
+                <img class="lazyload" data-src="media/may-8/INSIDE.png"/>
+              </div>
+              <audio controls preload="none" controlsList="nodownload">
                 <source src="media/may-8/InsideNike_004_IbtihajMuhammed.mp3" type="audio/mpeg">
                 Your browser does not support the audio tag.
               </audio>
@@ -108,7 +113,7 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
         <article id="dr-steph">
           <div class="content">
             <div class="video">
-              <video width="100%" height="auto" poster="media/may-1/DRSTEPH.jpg" preload="none" playsinline>
+              <video width="100%" height="auto" poster="media/may-1/DRSTEPH.jpg" preload="none" playsinline controlsList="nodownload">
                 <source src="media/may-1/DRSTEPH-optimized.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
@@ -132,7 +137,7 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
           <div class="content">
             <div class="image">
               <a href="https://www.youtube.com/watch?v=EYuBZ8Vfm-Q&feature=youtu.be" target="_blank">
-                <div class="placeholder aspect-ratio_16-9">
+                <div class="placeholder">
                   <noscript>
                     <img class="noscript" src="media/may-1/JAMALLIGGIN.jpg" />
                   </noscript>
@@ -178,7 +183,7 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
         <article id="dos-and-donts">
           <div class="content">
             <div class="video">
-              <video width="100%" height="auto" poster="media/may-1/DOSANDDONTS.jpg" preload="none" playsinline>
+              <video width="100%" height="auto" poster="media/may-1/DOSANDDONTS.jpg" preload="none" playsinline controlsList="nodownload">
                 <source src="media/may-1/DOSANDDONTS.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
@@ -414,7 +419,7 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
         <article id="deepak-chopra">
           <div class="content">
             <div class="video">
-              <video width="100%" height="auto" poster="media/april-10/DEEPAK_16-9.jpg" preload="none" playsinline>
+              <video width="100%" height="auto" poster="media/april-10/DEEPAK_16-9.jpg" preload="none" playsinline controlsList="nodownload">
                 <source src="media/april-10/DEEPAK-720.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>

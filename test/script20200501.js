@@ -63,7 +63,6 @@ document.querySelectorAll('div.audio').forEach(audioContainer => {
   let playButtonOverlay = audioContainer.querySelector('div.play-button-overlay');
   playButtonOverlay.addEventListener('click', () => { 
     audio.play();
-    audio.controls = true;
     audioContainer.classList.add('playing');
     playButtonOverlay.style.display = 'none';
   });
@@ -71,7 +70,7 @@ document.querySelectorAll('div.audio').forEach(audioContainer => {
     audioPlayLink.addEventListener('click', (event) => {
       event.preventDefault();
       audio.play();
-      audio.controls = true;
+      audioContainer.classList.add('playing');
       playButtonOverlay.style.display = 'none';
     });
   });
@@ -95,7 +94,7 @@ document.querySelectorAll('div.audio').forEach(audioContainer => {
 // }
 
 // turn image placeholder background transparent when image is loaded
-document.querySelectorAll('div.image div.placeholder').forEach(placeholderElement => {
+document.querySelectorAll('div.placeholder').forEach(placeholderElement => {
   placeholderElement.querySelector('img').addEventListener('lazyloaded', () => {
     placeholderElement.style.backgroundColor = 'transparent';
   });
